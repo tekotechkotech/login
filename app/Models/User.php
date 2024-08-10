@@ -2,16 +2,16 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 
-class User extends Authenticatable implements MustVerifyEmail
+class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, HasUuids;
 
     /**
      * The attributes that are mass assignable.
@@ -19,11 +19,12 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array<int, string>
      */
 
-     protected $table = 'user';
-     protected $primaryKey = 'id_user';
-     protected $keyType = 'string';
-     public $incrementing = false;
+     protected $table = 'user'; // Pastikan ini sesuai dengan nama tabel di database
+    // protected $table = 'user';
+    protected $primaryKey = 'id_user';
+    protected $keyType = 'string';
     protected $fillable = [
+        'name',
         'name',
         'email',
         'password',
@@ -50,15 +51,14 @@ class User extends Authenticatable implements MustVerifyEmail
         'password' => 'hashed',
     ];
 
-    protected static function boot()
-    {
-        parent::boot();
 
-        // Automatically generate UUID when creating a new User
-        static::creating(function ($model) {
-            if (empty($model->id_user)) {
-                $model->id_user = Str::uuid()->toString();
-            }
-        });
+    public function pesertaDidik()
+    {
+        return $this->hasOne(PesertaDidik::class, 'user_id');
+    }
+
+    public function pengurus()
+    {
+        return $this->hasOne(Pengurus::class, 'user_id');
     }
 }

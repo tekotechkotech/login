@@ -166,16 +166,6 @@
                                 @endif
                             </div>
 
-                            {{-- <div class="mt-4 d-flex justify-content-end">
-                                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal"
-                                    aria-label="Close">Cancel</button>
-
-                                <button type="submit" class="btn btn-danger ms-3">
-                                    Hapus Akun
-                                </button>
-                            </div> --}}
-
-
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>

@@ -31,6 +31,24 @@
 
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
+          <a href="{{ env('SUB_MANAGE') }}" class="menu w-100">
+            <div class="card mb-0">
+              <div class="row g-0">
+                <div class="col-md-2 text-center ">
+                  {{-- <i class="ti ti-layout-dashboard img-fluid rounded-start" style="font-size:80px"></i> --}}
+                  {{-- <img src="..." class="img-fluid rounded-start" alt="..."> --}}
+                </div>
+                <div class="col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Managemento</h5>
+                    <p class="card-text"><small class="text-muted">Pengelolaan Hak Akses Karyawan</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
           <a href="#" class="menu w-100">
             <div class="card mb-0">
               <div class="row g-0">
