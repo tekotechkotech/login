@@ -19,7 +19,7 @@ class InstansiSeeder extends Seeder
             'email' => 'instansi@utama.com',
             'web' => 'faiz-ag.com',
             'slogan' => 'websiteku, websitemu, website kita semuas',
-            'logo' => 'logof.png',
+            'logo' => 'logofsamping.png',
             'ico' => 'logof.png',
         ]);
 
