@@ -17,8 +17,10 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('telepon', 15)->nullable();
             $table->string('email')->unique();
-            $table->string('domain');
+            $table->string('web');
+            $table->string('slogan');
             $table->string('logo');
+            $table->string('ico');
             $table->timestamps();
         });
     }

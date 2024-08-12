@@ -30,4 +30,9 @@ class Kelas extends Model
     {
         return $this->belongsTo(Pengurus::class, 'wali_kelas', 'id_pengurus');
     }
+    
+    public function quizzes()
+    {
+        return $this->belongsToMany(Quiz::class, 'quiz_kelas');
+    }
 }

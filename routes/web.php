@@ -16,6 +16,11 @@ use App\Http\Controllers\Auth\LoginController;
 */
 
 Route::get('/', function () {
+    
+    // $domain = implode('.', array_slice(explode('.', request()->getHost()), 1));
+    // dd($domain);
+    // Menampilkan nama domain
+    // dd($domain);
     return redirect()->route('login');
     // dd('sini');
     // return view('welcome');
