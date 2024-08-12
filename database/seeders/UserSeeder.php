@@ -15,7 +15,6 @@ class UserSeeder extends Seeder
                 'id_user' => Str::uuid(),
                 'name' => 'User ' . $i,
                 'email' => 'user' . $i . '@example.com',
-                'google_id' => Str::uuid(),
                 'email_verified_at' => now(),
                 'password' => bcrypt('password'), // or use any default password
                 'remember_token' => Str::random(10),

@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Modernize Free</title>
+    <title>{{ $instansi->nama }}</title>
     <link rel="shortcut icon" type="image/png" href="../assets/images/logos/{{ $instansi->ico }}" />
     <link rel="stylesheet" href="../assets/css/styles.min.css" />
     <meta name="csrf-token" content="{{ csrf_token() }}">

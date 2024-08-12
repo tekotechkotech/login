@@ -14,11 +14,8 @@ return new class extends Migration
         Schema::create('peserta_didik', function (Blueprint $table) {
             $table->uuid('id_peserta_didik')->primary();
             $table->uuid('user_id');
-            $table->uuid('kelas_id');
-            $table->string('nama', 100);
-            $table->string('nis', 20)->unique();
-            $table->date('tanggal_lahir');
-            $table->string('alamat');
+            $table->uuid('kelas_id')->nullable();
+            $table->enum('status',['1','0'])->default('1');
             $table->timestamps();
 
             // Foreign key constraint

@@ -27,7 +27,7 @@
       @include('layouts.logos')
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <a href="{{ env('SUB_MANAGE') }}" class="menu w-100">
+          <a href="manage.{{ $instansi->web }}" class="menu w-100">
             <div class="card mb-0">
               <div class="row g-0">
                 <div class="col-md-2 text-center ">
@@ -45,25 +45,7 @@
           </a>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <a href="#" class="menu w-100">
-            <div class="card mb-0">
-              <div class="row g-0">
-                <div class="col-md-2 text-center ">
-                  {{-- <i class="ti ti-layout-dashboard img-fluid rounded-start" style="font-size:80px"></i> --}}
-                  {{-- <img src="..." class="img-fluid rounded-start" alt="..."> --}}
-                </div>
-                <div class="col-md-12">
-                  <div class="card-body">
-                    <h5 class="card-title">MasterRegist</h5>
-                    <p class="card-text"><small class="text-muted">Pengelolaan Penerimaan Peserta Didik Baru</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <a href="#" class="menu w-100">
+          <a href="course.{{ $instansi->web }}" class="menu w-100">
             <div class="card mb-0">
               <div class="row g-0">
                 <div class="col-md-2 text-center ">
@@ -81,67 +63,7 @@
           </a>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <a href="#" class="menu w-100">
-            <div class="card mb-0">
-              <div class="row g-0">
-                <div class="col-md-2 text-center ">
-                  {{-- <i class="ti ti-layout-dashboard img-fluid rounded-start" style="font-size:80px"></i> --}}
-                  {{-- <img src="..." class="img-fluid rounded-start" alt="..."> --}}
-                </div>
-                <div class="col-md-12">
-                  <div class="card-body">
-                    <h5 class="card-title">MasterProgress</h5>
-                    <p class="card-text"><small class="text-muted">
-                        Sistem Manajemen Data Peserta Didik
-                      </small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <a href="#" class="menu w-100">
-            <div class="card mb-0">
-              <div class="row g-0">
-                <div class="col-md-2 text-center ">
-                  {{-- <i class="ti ti-layout-dashboard img-fluid rounded-start" style="font-size:80px"></i> --}}
-                  {{-- <img src="..." class="img-fluid rounded-start" alt="..."> --}}
-                </div>
-                <div class="col-md-12">
-                  <div class="card-body">
-                    <h5 class="card-title">MasterWork</h5>
-                    <p class="card-text"><small class="text-muted">
-                        Sistem Manajemen Instruktur dan Karyawan
-                      </small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <a href="#" class="menu w-100">
-            <div class="card mb-0">
-              <div class="row g-0">
-                <div class="col-md-2 text-center ">
-                  {{-- <i class="ti ti-layout-dashboard img-fluid rounded-start" style="font-size:80px"></i> --}}
-                  {{-- <img src="..." class="img-fluid rounded-start" alt="..."> --}}
-                </div>
-                <div class="col-md-12">
-                  <div class="card-body">
-                    <h5 class="card-title">MasterAcademy</h5>
-                    <p class="card-text"><small class="text-muted">
-                        Sistem Informasi Akademik
-                      </small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <a href="#" class="menu w-100">
+          <a href="test.{{ $instansi->web }}" class="menu w-100">
             <div class="card mb-0">
               <div class="row g-0">
                 <div class="col-md-2 text-center ">
@@ -161,7 +83,7 @@
           </a>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <a href="#" class="menu w-100">
+          <a href="billing.{{ $instansi->web }}" class="menu w-100">
             <div class="card mb-0">
               <div class="row g-0">
                 <div class="col-md-2 text-center ">
@@ -170,7 +92,7 @@
                 </div>
                 <div class="col-md-12">
                   <div class="card-body">
-                    <h5 class="card-title">MasterFinance</h5>
+                    <h5 class="card-title">MasterBilling</h5>
                     <p class="card-text"><small class="text-muted">
                         Sistem Keuangan dan Pembayaran
                       </small></p>
