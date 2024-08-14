@@ -27,15 +27,7 @@
       @include('layouts.logos')
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
-<<<<<<< HEAD
-<<<<<<< HEAD
           <a href="https://manage.{{ $instansi->web }}/" class="menu w-100">
-=======
-          <a href="manage.{{ $instansi->web }}" class="menu w-100">
->>>>>>> parent of cf7be0e (new menu)
-=======
-          <a href="manage.{{ $instansi->web }}" class="menu w-100">
->>>>>>> parent of cf7be0e (new menu)
             <div class="card mb-0">
               <div class="row g-0">
                 <div class="col-md-2 text-center ">
@@ -53,15 +45,7 @@
           </a>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
-<<<<<<< HEAD
-<<<<<<< HEAD
           <a href="https://course.{{ $instansi->web }}/" class="menu w-100">
-=======
-          <a href="course.{{ $instansi->web }}" class="menu w-100">
->>>>>>> parent of cf7be0e (new menu)
-=======
-          <a href="course.{{ $instansi->web }}" class="menu w-100">
->>>>>>> parent of cf7be0e (new menu)
             <div class="card mb-0">
               <div class="row g-0">
                 <div class="col-md-2 text-center ">
