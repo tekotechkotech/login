@@ -28,7 +28,11 @@
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <a href="https://manage.{{ $instansi->web }}/" class="menu w-100">
+=======
+          <a href="manage.{{ $instansi->web }}" class="menu w-100">
+>>>>>>> parent of cf7be0e (new menu)
 =======
           <a href="manage.{{ $instansi->web }}" class="menu w-100">
 >>>>>>> parent of cf7be0e (new menu)
@@ -50,7 +54,11 @@
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <a href="https://course.{{ $instansi->web }}/" class="menu w-100">
+=======
+          <a href="course.{{ $instansi->web }}" class="menu w-100">
+>>>>>>> parent of cf7be0e (new menu)
 =======
           <a href="course.{{ $instansi->web }}" class="menu w-100">
 >>>>>>> parent of cf7be0e (new menu)
