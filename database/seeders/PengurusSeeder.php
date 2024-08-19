@@ -21,7 +21,7 @@ class PengurusSeeder extends Seeder
                 'id_pengurus' => Str::uuid(),
                 'user_id' => $user->id_user,
                 'cabang_id' => $instansiCabang->id_instansi_cabang, // Hubungkan dengan cabang yang ada
-                'akses' => 'full_access',
+                'akses' => 'ADC ADK APD AP AT ',
                 'keterangan' => 'Pengurus description ' . $user->name,
                 'status' => 'aktif',
             ]);
